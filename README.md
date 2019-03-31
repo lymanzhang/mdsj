@@ -2,9 +2,10 @@
 MDSJ – Multidimensional Scaling for Java (clone of defunct project)
 
 This repository is a copy of content that is no longer hosted at http://algo.uni-konstanz.de/software/mdsj/
-skyebend is *not* the author of this package. 
+skyebend is *not* the author of this package. Hosted here under the terms of Creative Commons License "by-nc-sa" 3.0.
+Much of this content was recovered from the internet archive https://web.archive.org/web/20180719063437/http://algo.uni-konstanz.de/software/mdsj/
 
-MDSJ is a free Java library for Multidimensional Scaling (MDS).
+## MDSJ is a free Java library for Multidimensional Scaling (MDS).
 
 It is a free, non-graphical, self-contained, lightweight implementation of basic MDS algorithms and intended to be used both as a standalone application and as a building block in Java based data analysis and visualization software.
 
@@ -16,7 +17,7 @@ Finding these geometric positions is useful for visualizing data that are intrin
 
 More formally, there are n data objects 1,...,n. For each possible pair of i,j of these objects a nonnegative d(i,j) expresses how dissimilar the two objects i and j are. The resulting positions x1,...,xn should have Euclidean distance ||xi – xj|| that approximates the original dissimilarity d(i,j) as closely as possible.
 
-Features
+## Features
 
 * Classical MDS in multiple dimensions
 * Pivot MDS, an efficient MDS variant for very large data sets – see U. Brandes and C. Pich, Eigensolver Methods for Progressive Multidimensional Scaling of Large Data. Proc. 14th Intl. Symp. Graph Drawing (GD '06). LNCS 4372, pp. 42-53. © Springer-Verlag, 2007.
@@ -25,7 +26,7 @@ Features
 * simple Java API, MDSJ as external Java library
 * easy-to-use command line tool
 
-Download
+## Download
 
 The current version is v0.2 [2009-11-18]. It does not depend on a specific operating system or platform, but merely requires a runtime environment of Java 1.5 or higher to be installed on your system.
 
@@ -35,7 +36,7 @@ The current version is v0.2 [2009-11-18]. It does not depend on a specific opera
 * Sample data: nations.txt, nations-cmds.txt
 For detailed information on methods and background, see C. Pich, Applications of Multidimensional Scaling to Graph Drawing, PhD thesis, University of Konstanz, 2009.
 
-Usage
+## Usage
 
 The file mdsj.jar is required to be included on your classpath.
 
@@ -96,7 +97,6 @@ MDSJ - Multidimensional Scaling for Java v0.2  (c) 2009 University of Konstanz
   -rR -sS -tT may be used jointly (termination once any condition holds)
   output is written to stdout when no outfile specified
 ```
-software/mdsj> _
 
 It reads an input text file infile containing the input dissimilarities and writes an output text file outfile containing the coordinates computed by MDS. Each line in the input file represents one row in the input matrix. The entries must be parseable as doubles and separated by at least one blank. See nations.txt for a sample file. When an output file for the final coordinates is specified, it is in the same format, i.e., each line contains the coordinates for one object in each dimension. If no outfile is specified, the coordinates are written to the standard output.
 
@@ -105,7 +105,8 @@ A sample data file: Wish (1971) asked 18 students about their perception of simi
 Classical Scaling turns these dissimilarities (nations.txt) into coordinates (nations-cmds.txt), which can be processed further, e.g., plotted with gnuplot.
 
 The data is due to: Wish, Individual differences in perceptions and preferences among nations, in: King and Tigert (eds.), Attitude research reaches new heights. Am. Marketing Assoc., 1971. Original data set of similarity scores.
-Version History
+
+## Version History
 
     v0.2 [2009-11-18]: Added features. Made linear algebra computations a bit more robust. Extended command line interface.
         Detailed spectral analysis of input dissimilarity matrix
@@ -117,24 +118,23 @@ Version History
     v0.1 [2008-06-11]: First pre-alpha release.
 
 Some features are candiates for inclusion in future versions:
+* Nonmetric Scaling
+* Order Constraints
+* Procrustes Analysis
+* Unfolding
 
-    Nonmetric Scaling
-    Order Constraints
-    Procrustes Analysis
-    Unfolding
-
-Conditions of Use
+## Conditions of Use
 
 License Conditions: MDSJ is available under the terms and conditions of the Creative Commons License "by-nc-sa" 3.0. This means that you can
 
-    freely copy, share, and distribute the library at no cost and
-    re-use the library as a component in your software,
+* freely copy, share, and distribute the library at no cost and
+* re-use the library as a component in your software,
 
 as long as you
 
-    include the citation below (by),
-    do not use MDSJ for any commercial purposes (nc), and
-    apply these conditions to all your pieces of software that make use of MDSJ (sa). 
+* include the citation below (by),
+* do not use MDSJ for any commercial purposes (nc), and
+* apply these conditions to all your pieces of software that make use of MDSJ (sa). 
 
 Please feel free to contact us for any questions regarding these conditions.
 
